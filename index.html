@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Official Artist Page | Harrjeet Singh Titlee</title>
 
-    <!-- Search Engine Meta Tags -->
-    <meta name="description" content="Official page of Harrjeet Singh Titlee: The One Man Army. At his 60s, bringing a futuristic live electronic Punjabi & Bollywood musical act powered by Modern Gears.">
-    <meta name="keywords" content="Harrjeet Singh Titlee, Titlee Singer, Hai Titlee, Live Ableton Artist, Punjabi Electronic Music, Bollywood Remix Live, Launchpad Musician India, Harjeet Singh Titlee, Age 60 Singer">
-
-    <!-- Social Media Preview Tags (WhatsApp, Instagram, Facebook) -->
+    <!-- Search Engine & Social Media Setup -->
+    <meta name="description" content="Official brand page of Harrjeet Singh Titlee: The One Man Army. At his 60s, bringing a futuristic live electronic Punjabi & Bollywood musical act powered by Modern Gears.">
+    <meta name="keywords" content="Harrjeet Singh Titlee, Titlee Singer, Hai Titlee, Live Ableton Artist, Punjabi Electronic Music, Bollywood Remix Live, Harjeet Singh Titlee, Age 60 Singer">
     <meta property="og:title" content="Harrjeet Singh Titlee | Official Brand Page">
     <meta property="og:description" content="The One Man Army: Age 60 veteran singer performing live Punjabi & Bollywood electronic sets on Ableton, Launchpads, and Launchkeys.">
     <meta property="og:image" content="profile.jpg">
@@ -23,6 +21,8 @@
             --text-sub: #9ca3af;
             --accent: #ff2a5f;
             --accent-hover: #e01b4c;
+            --whatsapp-green: #25D366;
+            --copy-blue: #3b82f6;
         }
 
         * {
@@ -48,13 +48,13 @@
         }
 
         .profile-img {
-            width: 110px;
-            height: 110px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             border: 3px solid var(--accent);
             object-fit: cover;
             margin-bottom: 16px;
-            box-shadow: 0 0 20px rgba(255, 42, 95, 0.2);
+            box-shadow: 0 0 20px rgba(255, 42, 95, 0.3);
         }
 
         h1 {
@@ -69,7 +69,7 @@
             font-size: 0.95rem;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
             margin-bottom: 20px;
         }
 
@@ -116,6 +116,7 @@
             border-color: var(--accent);
         }
 
+        /* Responsive Video Container */
         .video-container {
             position: relative;
             padding-bottom: 56.25%;
@@ -135,56 +136,55 @@
             border: 0;
         }
 
+        /* Audio Frame Container */
         .audio-container {
             border-radius: 12px;
             overflow: hidden;
             margin-bottom: 16px;
         }
 
-        .tour-list {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .tour-item {
+        .share-container {
             background-color: var(--card-bg);
-            padding: 14px 18px;
+            padding: 24px;
             border-radius: 12px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-align: left;
+            margin-top: 16px;
         }
 
-        .tour-info .date {
+        .share-title {
             font-size: 0.85rem;
             color: var(--accent);
             font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
         }
 
-        .tour-info .venue {
+        .share-text {
             font-size: 0.95rem;
-            font-weight: 600;
-            color: var(--text-main);
-            margin-top: 2px;
+            color: var(--text-sub);
+            margin-bottom: 16px;
+            line-height: 1.5;
         }
 
-        .ticket-btn {
-            background-color: var(--accent);
+        .share-row {
+            display: flex;
+            gap: 12px;
+            width: 100%;
+        }
+
+        .action-btn {
+            flex: 1;
+            padding: 14px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 700;
             color: #fff;
             text-decoration: none;
-            padding: 8px 14px;
-            border-radius: 8px;
-            font-size: 0.85rem;
-            font-weight: 700;
-            transition: background 0.2s;
-            cursor: pointer;
             border: none;
-        }
-
-        .ticket-btn:hover {
-            background-color: var(--accent-hover);
+            cursor: pointer;
+            transition: background 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .footer {
@@ -192,80 +192,85 @@
             font-size: 0.8rem;
             color: var(--text-sub);
         }
-
-        /* Dual Button Row Utilities */
-        .share-actions-row {
-            display: flex;
-            gap: 12px;
-            margin-top: 16px;
-            justify-content: center;
-            width: 100%;
-        }
-
-        .share-actions-row .ticket-btn {
-            flex: 1;
-            padding: 12px;
-            text-align: center;
-            font-size: 0.9rem;
-        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- 1. PROFILE PICTURE & BIO SECTION -->
-        <img class="profile-img" src="profile.jpg" alt="Artist Profile">
+        <!-- 1. IMAGE & IDENTITY -->
+        <img class="profile-img" src="profile.jpg" alt="Harrjeet Singh Titlee">
         <h1>HARRJEET SINGH TITLEE</h1>
-        <div class="tagline">
-            THE ONE MAN ARMY | LIVE WITH MODERN GEARS
-        </div>
+        <div class="tagline">THE ONE MAN ARMY | LIVE WITH MODERN GEARS</div>
+        
+        <!-- 2. BIOGRAPHY -->
         <p class="bio">
-            Winner of **Best Singer Troply on ETC-Channel Punjabi** Known for his hit "Hai Titlee." Now at his 60s, this is a futuristic musical reinvention.**ONLY HE AND HIS MODERN GEARS**. Classic Punjabi & Bollywood anthems smashed live .
+            Winner of **Best Singer Trophy on ETC-Channel Punjabi**. Known for his hit "Hai Titlee." Now at his 60s, this is a futuristic musical reinvention—**ONLY HE AND HIS MODERN GEARS**. Classic Punjabi & Bollywood anthems smashed live.
         </p>
 
-        <!-- 2. STREAMING LINKS SECTION -->
+        <!-- 3. OFFICIAL MUSIC & PROFILE LINKS -->
         <h2>Connect & Listen</h2>
         <div class="links-wrapper">
-            <a href="https://spotify.com" class="link-card" target="_blank">🎵 Stream on Spotify</a>
-            <a href="https://youtube.com" class="link-card" target="_blank">📺 YouTube Channel</a>
-            <a href="https://jiosaavn.com_" class="link-card" target="_blank">🎶 Listen on JioSaavn</a>
-            <a href="https://gaana.com" class="link-card" target="_blank">🎧 Listen on Gaana</a>
-            <a href="https://instagram.com" class="link-card" target="_blank">📸 Instagram Profile</a>
-            <a href="https://facebook.com" class="link-card" target="_blank">👤 Facebook Page</a>
+            <a href="https://open.spotify.com/album/32ChwMzvGwtBnX7pDWOE46" class="link-card" target="_blank">🎵 Stream on Spotify</a>
+            <a href="https://www.youtube.com/@HarrjeetSinghTitlee" class="link-card" target="_blank">📺 YouTube Channel</a>
+            <a href="https://www.jiosaavn.com/song/bebo/JlsZRDBRBms" class="link-card" target="_blank">🎶 Listen on JioSaavn</a>
+            <a href="https://gaana.com/song/bebo-37" class="link-card" target="_blank">🎧 Listen on Gaana</a>
+            <a href="https://www.instagram.com/harrjeetsinghtitlee" class="link-card" target="_blank">📸 Instagram Profile</a>
+            <a href="https://www.facebook.com/harrjeetsingh.titlee" class="link-card" target="_blank">👤 Facebook Page</a>
         </div>
 
-        <!-- 3. YOUTUBE MUSIC VIDEO SECTION -->
+        <!-- 4. YOUTUBE MUSIC VIDEO PLAYER -->
         <h2>Latest Music Video</h2>
         <div class="video-container">
             <iframe src="https://youtube-nocookie.com" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
-        <!-- 4. SPOTIFY AUDIO TRACK PLAYER -->
+        <!-- 5. SPOTIFY AUDIO ALBUM EMBED -->
         <h2>Featured Track</h2>
         <div class="audio-container">
             <iframe style="border-radius:12px" src="https://spotify.com" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
 
-        <!-- 5. VIRAL SHARE SECTION -->
+        <!-- 6. VIRAL DISTRIBUTE SECTION -->
         <h2>Join The Movement</h2>
-        <div class="tour-list">
-            <div class="tour-item" style="justify-content: center; text-align: center; padding: 24px;">
-                <div class="tour-info" style="text-align: center; width: 100%;">
-                    <div class="date">SHARE THIS ARTIST</div>
-                    <div class="venue" style="margin-top: 6px; color: var(--text-sub);">
-                        Ready for the ultimate Punjabi & Bollywood electronic experience? Share the link below with music lovers worldwide!
-                    </div>
-                    
-                    <!-- Dual Action Row for Responsive Sharing -->
-                    <div class="share-actions-row">
-                        <!-- WhatsApp Link Option -->
-                        <a href="https://whatsapp.com" 
-                           class="ticket-btn" 
-                           target="_blank" 
-                           style="background-color: #25D366; display: flex; align-items: center; justify-content: center; text-decoration: none;">
-                           💚 WhatsApp
-                        </a>
-                        
-                        <!-- Clipboard Copy Button Option -->
-                        <button id="copyBtn" class="ticket-btn" style="background-color: #3b82f6;">
-                            📋 Copy Link
+        <div class="share-container">
+            <div class="share-title">SHARE THIS ARTIST</div>
+            <div class="share-text">
+                Ready for the ultimate Punjabi & Bollywood electronic experience? Share the link below with music lovers worldwide!
+            </div>
+            
+            <div class="share-row">
+                <!-- WhatsApp Option -->
+                <a href="https://whatsapp.com" 
+                   class="action-btn" 
+                   target="_blank" 
+                   style="background-color: var(--whatsapp-green);">
+                   💚 WhatsApp
+                </a>
+                
+                <!-- Clipboard Copy Option -->
+                <button id="copyBtn" class="action-btn" style="background-color: var(--copy-blue);">
+                    📋 Copy Link
+                </button>
+            </div>
+        </div>
+
+        <!-- 7. FOOTER -->
+        <div class="footer">
+            © 2026 Harrjeet Singh Titlee. All rights reserved.
+        </div>
+    </div>
+
+    <!-- Smooth Clipboard Utility Script -->
+    <script>
+        document.getElementById('copyBtn').addEventListener('click', function() {
+            const currentLink = 'https://github.io';
+            navigator.clipboard.writeText(currentLink).then(() => {
+                const btn = document.getElementById('copyBtn');
+                btn.innerText = '✅ Copied!';
+                btn.style.backgroundColor = '#10b981';
+                setTimeout(() => {
+                    btn.innerText = '📋 Copy Link';
+                    btn.style.backgroundColor = '#3b82f6';
+                }, 2000);
+            }).catch(err => {
+                console.error('Link copy failed: ', err);
