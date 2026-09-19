@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Artist Page</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #1e2538;
+            --text-main: #f3f4f6;
+            --text-sub: #9ca3af;
+            --accent: #ff2a5f;
+            --accent-hover: #e01b4c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 540px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 3px solid var(--accent);
+            object-fit: cover;
+            margin-bottom: 16px;
+            box-shadow: 0 0 20px rgba(255, 42, 95, 0.2);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 6px;
+            letter-spacing: -0.5px;
+        }
+
+        .tagline {
+            color: var(--accent);
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+        .bio {
+            color: var(--text-sub);
+            font-size: 1rem;
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            text-align: left;
+            margin: 32px 0 16px 0;
+            color: var(--text-main);
+            border-left: 4px solid var(--accent);
+            padding-left: 10px;
+        }
+
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-card {
+            background-color: var(--card-bg);
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            display: block;
+            text-align: center;
+        }
+
+        .link-card:hover {
+            transform: translateY(-2px);
+            background-color: rgba(255, 42, 95, 0.1);
+            border-color: var(--accent);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            background: #000;
+            margin-bottom: 16px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .audio-container {
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 16px;
+        }
+
+        .tour-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .tour-item {
+            background-color: var(--card-bg);
+            padding: 14px 18px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+
+        .tour-info .date {
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .tour-info .venue {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-top: 2px;
+        }
+
+        .ticket-btn {
+            background-color: var(--accent);
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            transition: background 0.2s;
+        }
+
+        .ticket-btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .footer {
+            margin-top: 64px;
+            font-size: 0.8rem;
+            color: var(--text-sub);
+        }
+
+    <!-- Search Engine Meta Tags -->
+    <meta name="description" content="Official page of Harrjeet Singh Titlee: The One Man Army. At his 60s, bringing a futuristic live electronic Bollywood & Punjabi musical act powered by Modern Gears.">
+    <meta name="keywords" content="Harrjeet Singh Titlee, Titlee Singer, Hai Titlee, Live Ableton Artist, Punjabi Electronic Music, Bollywood Remix Live, Launchpad Musician India, Harjeet Singh Titlee, Age 60 Singer">
+
+    <!-- Social Media Preview Tags (WhatsApp, Instagram, Facebook) -->
+    <meta property="og:title" content="Harrjeet Singh Titlee | Official Brand Page">
+    <meta property="og:description" content="The One Man Army: Age 60 veteran singer performing live Bollywood & Punjabi electronic sets on Ableton, Launchpads, and Launchkeys.">
+    <meta property="og:image" content="profile.jpg">
+    <meta property="og:type" content="website">
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+            <!-- 1. PROFILE PICTURE & BIO SECTION -->
+        <img class="profile-img" src="profile.jpg" alt="Artist Profile">
+        <h1>HARRJEET SINGH TITLEE</h1>
+        <div class="tagline" style="font-size: 0.95rem; color: var(--accent); font-weight: 700; letter-spacing: 1px; margin-bottom: 20px;">
+            THE ONE MAN ARMY | LIVE WITH MODERN GEARS
+        </div>
+        <p class="bio" style="font-size: 1.1rem; line-height: 1.6; padding: 0 10px; color: var(--text-main); margin-bottom: 30px;">
+            Winner of **Best Singer Troply on ETC-Channel Punjabi** Known for his hit <em>"Hai Titlee."</em> Now at <strong>his 60s</strong>, this is a futuristic musical reinvention.**ONLY HE AND HIS MODERN GEARS**. Classic <strong> Punjabi & Bollywood anthems</strong> smashed live </strong>. 
+        </p>
+
+        <!-- 2. STREAMING LINKS SECTION -->
+        <h2>Connect & Listen</h2>
+        <div class="links-wrapper">
+            <a href="https://open.spotify.com/album/32ChwMzvGwtBnX7pDWOE46" class="link-card" target="_blank">Stream on Spotify</a>
+            <a href="https://www.youtube.com/@HarrjeetSinghTitlee" class="link-card" target="_blank">YouTube Channel</a>
+            <a href="https://www.jiosaavn.com/artist/harjeet-singh-titlee-songs/cX28ykSAfsc_" class="link-card" target="_blank">Listen on JioSaavn</a>
+            <a href="https://gaana.com/artist/harjeet-singh-titlee" class="link-card" target="_blank">Listen on Gaana</a>
+            <a href="https://www.instagram.com/harrjeetsinghtitlee/" class="link-card" target="_blank">Instagram Profile</a>
+            <a href="https://www.facebook.com/harrjeetsingh.titlee/" class="link-card" target="_blank">Facebook Page</a>
+            <a href="mailto:yourbusiness@email.com" class="link-card">Booking & Press Inquiries</a>
+        </div>
+
+        <!-- 3. YOUTUBE MUSIC VIDEO SECTION -->
+        <h2>Latest Music Video</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/k41L8R5CHbE?si=pfQXCnvcUErcO_xV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- 4. SPOTIFY AUDIO TRACK PLAYER -->
+        <h2>Featured Track</h2>
+        <div class="audio-container">
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/32ChwMzvGwtBnX7pDWOE46?utm_source=generator&si=6e6be4312e7c4e84" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+       <!-- 5. SHOW BOOKINGS -->
+       <div class="date">NOW BOOKING: INDIA & WORLDWIDE</div>
+<div class="venue" style="margin-top: 6px; color: var(--text-sub);">
+    Accepting performance requests for festival sets, corporate events, wedding tours, and club gigs across India and globally.
+</div>
+<a href="mailto:yourbusiness@email.com" class="ticket-btn" style="display: inline-block; margin-top: 14px;">Contact Management</a>
+
+
+
+        <!-- FOOTER -->
+        <div class="footer">
+            2026 Artist Name. Built independently.
+        </div>
+    </div>
+
+</body>
+</html>
